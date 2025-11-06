@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Movement")]
     [SerializeField] private float speed = 10f;
-    [SerializeField] private float jumpForce = 12f;
+    [SerializeField] private float jumpForce = 20f;
 
     [Header("Rotation (physics)")]
     [SerializeField] private float jumpAngularImpulse = 100f; // torque impulse (tweak) 
@@ -74,13 +74,11 @@ public class PlayerMovement : MonoBehaviour
         // If input is significantly left/right, apply an angular impulse so the player rotates in-air 
         if (horizontalInput > inputThreshold)
         {
-            // Jumping right -> rotate negative Z (clockwise), so negative angular velocity in 2D 
-            body.AddTorque(-jumpAngularImpulse, ForceMode2D.Impulse);
+            body.AddTorque(-jumpAngularImpulse, ForceMode2D.Impulse); // Jumping right -> rotate negative Z (clockwise) 
         }
         else if (horizontalInput < -inputThreshold)
         {
-            // Jumping left -> rotate positive Z (counter-clockwise) 
-            body.AddTorque(jumpAngularImpulse, ForceMode2D.Impulse);
+            body.AddTorque(jumpAngularImpulse, ForceMode2D.Impulse); // Jumping left -> rotate positive Z (counter-clockwise) 
         }
         // else: small input -> no torque (jump straight up) 
     }

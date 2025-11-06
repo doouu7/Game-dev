@@ -3,6 +3,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     [SerializeField] private float cameraSpeed = 0.3f;
+    [SerializeField] private float cameraWidth = 18.0f;
     private float currentPosX;
     private Vector3 cameraVelocity = Vector3.zero;
 
@@ -35,7 +36,7 @@ public class CameraController : MonoBehaviour
         {
             //TargetSnap
             float raxX = _newRoom.position.x;
-            float snappedX = Mathf.Round(raxX / 27f) * 27f;
+            float snappedX = Mathf.Round(raxX / cameraWidth) * cameraWidth;
             currentPosX = snappedX;
 
             Debug.Log($"Camera target X: {currentPosX}");

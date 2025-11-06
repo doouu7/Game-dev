@@ -21,7 +21,7 @@ public class TripWire : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Debug.Log($"Triggered by: {collision.name}");
+        Debug.Log($"Triggered by: {collision.name}");
 
         if (collision.tag == "Player")
         {
