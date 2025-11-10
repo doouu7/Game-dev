@@ -1,0 +1,22 @@
+# =============== Unity Generated Files ===============
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild*/
+[Ll]ogs/
+[Mm]emoryCaptures/
+UserSettings/
+.vs/
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.user
+*.pidb
+*.booproj
+*.svd
+*.userprefs
+
+# =============== OS-specific ===============
+.DS_Store
+Thumbs.db
