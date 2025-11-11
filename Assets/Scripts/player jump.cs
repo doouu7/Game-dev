@@ -34,4 +34,5 @@ public class PlayerJump : MonoBehaviour
             isGrounded = true;
         }
     }
+    // this code is ai generated for refrence and citation
 }
