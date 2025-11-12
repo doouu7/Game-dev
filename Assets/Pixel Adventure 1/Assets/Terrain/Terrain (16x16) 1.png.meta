@@ -151,10 +151,10 @@ TextureImporter:
       name: Terrain (16x16) 1_2
       rect:
         serializedVersion: 2
-        x: 192
+        x: 208
         y: 128
-        width: 64
-        height: 48
+        width: 33
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,11 +241,11 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 64
-        width: 80
+        width: 9
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 4, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -284,9 +284,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 193
-        y: 97
-        width: 46
-        height: 14
+        y: 64
+        width: 63
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 7, z: 0, w: 7}
@@ -372,12 +372,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
-        width: 64
-        height: 48
+        y: 33
+        width: 49
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 7, z: 0, w: 7}
       customData: 
       outline: []
       physicsShape: []
@@ -415,12 +415,12 @@ TextureImporter:
       name: Terrain (16x16) 1_14
       rect:
         serializedVersion: 2
-        x: 209
+        x: 239
         y: 64
-        width: 31
-        height: 31
+        width: 17
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
