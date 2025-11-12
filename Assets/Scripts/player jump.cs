@@ -21,7 +21,7 @@ public class PlayerJump : MonoBehaviour
 
     void Jump()
     {
-        // reset vertical velocity before jumping
+        
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         isGrounded = false;
@@ -34,5 +34,5 @@ public class PlayerJump : MonoBehaviour
             isGrounded = true;
         }
     }
-    // this code is ai generated for refrence and citation
+   //for refrence and citiation, gen ai was used to help me write in c langauage. writen by me
 }
