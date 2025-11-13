@@ -5,12 +5,10 @@ public class PlayerJump : MonoBehaviour
     public float jumpForce = 7f;
     private Rigidbody2D rb;
     private bool isGrounded = false;
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
-
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
@@ -21,7 +19,7 @@ public class PlayerJump : MonoBehaviour
 
     void Jump()
     {
-        
+    
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         isGrounded = false;
@@ -34,5 +32,5 @@ public class PlayerJump : MonoBehaviour
             isGrounded = true;
         }
     }
-   //for refrence and citiation, gen ai was used to help me write in c langauage. writen by me
+
 }
